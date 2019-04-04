@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/ApiAutoTest.iml" filepath="$PROJECT_DIR$/.idea/ApiAutoTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter12/Chapter12.iml" filepath="$PROJECT_DIR$/Chapter12/Chapter12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter13/Chapter13.iml" filepath="$PROJECT_DIR$/Chapter13/Chapter13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatisTest/MyBatisTest.iml" filepath="$PROJECT_DIR$/MyBatisTest/MyBatisTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WeatherTest/WeatherTest.iml" filepath="$PROJECT_DIR$/WeatherTest/WeatherTest.iml" />
+    </modules>
+  </component>
+</project>

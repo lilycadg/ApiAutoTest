@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.course.model" >
+    <!--获取登录接口-->
+    <!--id是什么？   //从数据库中取出第一行的数据  id不能重复
+        LoginModel loginModel= session.selectOne("loginModel",1);-->
+    <select id="loginModel" parameterType="Integer" resultType="com.course.model.LoginModel">
+        select * from logincase
+        where id=#{id};
+    </select>
+    <!--添加用户接口case-->
+    <select id="addUserModel" parameterType="Integer" resultType="com.course.model.AddUserModel">
+        select * from addUserCase where id=#{id};
+    </select>
+
+    <!--获取用户信息         此处的id与   GetUserInfoModel getUserInfoModel=session.selectOne("getUserInfo1",1)一致-->
+    <select id="getUserInfo1" parameterType="Integer" resultType="com.course.model.GetUserInfoModel" >
+        select * from getuserinfocase
+        where id=#{id};
+    </select>
+    <!--获取用户列表case          getUserList1-->
+   <select id="getUserList1" parameterType="Integer" resultType="com.course.model.GetUserListModel">
+         select * from getuserlistcase
+         where id=#{id};
+    </select>
+    <!--更新/删除用户case-->
+   <select id="updateUserInfoModel" parameterType="Integer" resultType="com.course.model.UpdateUserInfoModel">
+         select * from updateuserinfocase
+         where id=#{id};
+    </select>
+
+
+
+
+    <!--获取用户信息 id与数据表中的expected一致-->
+    <select id="getUserInfo" parameterType="com.course.model.GetUserInfoModel" resultType="com.course.model.User">
+        select * from user
+        where id=#{userId};
+    </select>
+    <!--获取用户列表-->
+    <select id="getUserList" parameterType="com.course.model.GetUserListModel" resultType="com.course.model.User">
+        select * from USER
+        <trim prefix="WHERE" prefixOverrides="and">
+            <if test="null !=userName and '' !=userName">
+                AND userName=#{userName}
+            </if>
+            <if test="null !=sex and '' !=sex">
+                AND sex=#{sex}
+            </if>
+            <if test="null !=age and '' !=age">
+                AND age=#{age}
+            </if>
+        </trim>
+        ;
+    </select>
+    <!--获取更新之后的数据-->
+    <select id="updateUserInfo" parameterType="com.course.model.UpdateUserInfoModel" resultType="com.course.model.User">
+        select * from user
+        <trim prefix="WHERE" prefixOverrides="and">
+            <if test="null !=userName and '' !=userName">
+                AND userName=#{userName}
+            </if>
+            <if test="null !=sex and '' !=sex">
+                AND sex=#{sex}
+            </if>
+            <if test="null !=age and  '' !=age">
+                AND age=#{age}
+            </if>
+            <if test=" null !=permission and '' !=permission">
+                AND permission=#{permission}
+            </if>
+            <if test=" null !=isDelete and '' !=isDelete">
+                AND isDelete=#{isDelete}
+            </if>
+        </trim>
+        And id = #{userId};
+    </select>
+    <!--添加用户信息     与User user=session.selectOne("addUser",addUserModel)一致-->
+
+    <select id="addUser" parameterType="com.course.model.AddUserModel" resultType="com.course.model.User">
+        select * from user
+        where userName=#{userName}
+        and password=#{password}
+        and sex=#{sex}
+        and age=#{age}
+        and permission=#{permission}
+        and isDelete=#{isDelete};
+
+    </select>
+</mapper>

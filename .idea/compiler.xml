@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Chapter12" />
+        <module name="Chapter13" />
+        <module name="MyBatisTest" />
+        <module name="WeatherTest" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Chapter12" target="1.6" />
+      <module name="Chapter13" target="1.6" />
+      <module name="MyBatisTest" target="1.5" />
+      <module name="WeatherTest" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

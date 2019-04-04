@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="get方法">
+    <test name="方法">
+        <classes>
+            <class name="com.weather.cases.GetApiTest">
+                <methods>
+                    <include name="getAPITest"/>
+                    <include name="postAPITest"/>
+                    <include name="putAPITest"/>
+                    <include name="deleteAPITest"/>
+                </methods>
+            </class>
+            <class name="com.weather.cases.LoginCase">
+                <methods>
+                    <include name="enterpriseAPITest"/>
+                    <include name="loginAPITest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.weather.config.ExtentTestNGIReporterListener"></listener>
+    </listeners>
+
+</suite>

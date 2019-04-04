@@ -1,0 +1,195 @@
+2018-12-17 13:40:42.646 [main] INFO  com.course.Application - Starting Application on lilin2017122 with PID 1244 (F:\git\ApiAutoTest\Chapter13\target\classes started by lil in F:\git\ApiAutoTest)
+2018-12-17 13:40:42.659 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2018-12-17 13:40:42.853 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72d1ad2e: startup date [Mon Dec 17 13:40:42 CST 2018]; root of context hierarchy
+2018-12-17 13:40:45.150 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2018-12-17 13:40:46.277 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4d72d455] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-17 13:40:47.490 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 7777 (http)
+2018-12-17 13:40:47.523 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-12-17 13:40:47.525 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-12-17 13:40:47.815 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-17 13:40:47.816 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4963 ms
+2018-12-17 13:40:48.158 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-17 13:40:48.167 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-17 13:40:48.168 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-17 13:40:48.168 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-17 13:40:48.168 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-17 13:40:50.612 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2018-12-17 13:40:50.613 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2018-12-17 13:40:50.613 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2018-12-17 13:40:50.613 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2018-12-17 13:40:50.614 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-12-17 13:40:50.620 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-12-17 13:40:50.621 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-12-17 13:40:50.622 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-12-17 13:40:50.626 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-17 13:40:50.627 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-17 13:40:51.151 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72d1ad2e: startup date [Mon Dec 17 13:40:42 CST 2018]; root of context hierarchy
+2018-12-17 13:40:51.267 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-17 13:40:51.267 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-17 13:40:51.342 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-17 13:40:51.848 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-12-17 13:40:51.867 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-12-17 13:40:51.867 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2018-12-17 13:40:51.957 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-12-17 13:40:52.017 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2018-12-17 13:40:52.982 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 7777 (http)
+2018-12-17 13:40:52.996 [main] INFO  com.course.Application - Started Application in 11.858 seconds (JVM running for 13.917)
+2018-12-17 13:48:09.969 [http-nio-7777-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-17 13:48:09.969 [http-nio-7777-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-17 13:48:09.996 [http-nio-7777-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2018-12-17 13:48:10.427 [http-nio-7777-exec-2] INFO  com.course.controller.UserManager - 查看到的结果是1
+2018-12-17 13:48:10.513 [http-nio-7777-exec-3] INFO  com.course.controller.UserManager - 查看到的结果是0
+2018-12-17 13:48:10.553 [http-nio-7777-exec-4] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 13:48:10.559 [http-nio-7777-exec-4] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2018-12-17 13:48:15.649 [http-nio-7777-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 13:48:15.687 [http-nio-7777-exec-1] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是0
+2018-12-17 13:48:15.764 [http-nio-7777-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 13:48:15.769 [http-nio-7777-exec-5] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2018-12-17 13:48:15.857 [http-nio-7777-exec-8] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 13:48:15.864 [http-nio-7777-exec-8] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 13:48:30.975 [http-nio-7777-exec-6] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 13:48:30.983 [http-nio-7777-exec-6] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:00:56.509 [http-nio-7777-exec-7] INFO  com.course.controller.UserManager - 查看到的结果是1
+2018-12-17 14:00:56.616 [http-nio-7777-exec-10] INFO  com.course.controller.UserManager - 查看到的结果是0
+2018-12-17 14:00:56.683 [http-nio-7777-exec-2] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:00:56.690 [http-nio-7777-exec-2] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2018-12-17 14:01:01.740 [http-nio-7777-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:01:01.743 [http-nio-7777-exec-3] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是0
+2018-12-17 14:01:01.850 [http-nio-7777-exec-4] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:01:01.852 [http-nio-7777-exec-4] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2018-12-17 14:01:01.924 [http-nio-7777-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:01:01.941 [http-nio-7777-exec-1] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:01:07.066 [http-nio-7777-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:01:07.081 [http-nio-7777-exec-5] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:02:30.591 [http-nio-7777-exec-6] INFO  com.course.controller.UserManager - 查看到的结果是1
+2018-12-17 14:02:30.660 [http-nio-7777-exec-9] INFO  com.course.controller.UserManager - 查看到的结果是0
+2018-12-17 14:02:30.713 [http-nio-7777-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:02:30.718 [http-nio-7777-exec-7] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2018-12-17 14:02:35.778 [http-nio-7777-exec-10] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:02:35.783 [http-nio-7777-exec-10] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是0
+2018-12-17 14:02:35.884 [http-nio-7777-exec-2] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:02:35.889 [http-nio-7777-exec-2] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2018-12-17 14:02:35.956 [http-nio-7777-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:02:35.972 [http-nio-7777-exec-3] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:08:15.545 [http-nio-7777-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:08:15.549 [http-nio-7777-exec-1] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:08:45.836 [http-nio-7777-exec-8] INFO  com.course.controller.UserManager - 查看到的结果是1
+2018-12-17 14:08:45.927 [http-nio-7777-exec-6] INFO  com.course.controller.UserManager - 查看到的结果是0
+2018-12-17 14:08:45.991 [http-nio-7777-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:08:45.998 [http-nio-7777-exec-9] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2018-12-17 14:08:51.079 [http-nio-7777-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:08:51.081 [http-nio-7777-exec-7] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是0
+2018-12-17 14:08:51.164 [http-nio-7777-exec-10] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:08:51.168 [http-nio-7777-exec-10] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2018-12-17 14:11:00.937 [http-nio-7777-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:11:00.950 [http-nio-7777-exec-3] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:13:50.891 [http-nio-7777-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:13:50.903 [http-nio-7777-exec-1] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:16:02.978 [http-nio-7777-exec-8] INFO  com.course.controller.UserManager - 查看到的结果是1
+2018-12-17 14:16:03.030 [http-nio-7777-exec-6] INFO  com.course.controller.UserManager - 查看到的结果是0
+2018-12-17 14:16:03.070 [http-nio-7777-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:16:03.078 [http-nio-7777-exec-9] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2018-12-17 14:16:08.152 [http-nio-7777-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:16:08.155 [http-nio-7777-exec-7] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是0
+2018-12-17 14:16:08.220 [http-nio-7777-exec-10] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:16:08.222 [http-nio-7777-exec-10] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2018-12-17 14:16:08.285 [http-nio-7777-exec-2] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:16:08.293 [http-nio-7777-exec-2] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:16:13.362 [http-nio-7777-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:16:13.369 [http-nio-7777-exec-3] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:16:57.265 [http-nio-7777-exec-1] INFO  com.course.controller.UserManager - 查看到的结果是1
+2018-12-17 14:16:57.319 [http-nio-7777-exec-5] INFO  com.course.controller.UserManager - 查看到的结果是0
+2018-12-17 14:16:57.356 [http-nio-7777-exec-8] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:16:57.366 [http-nio-7777-exec-8] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2018-12-17 14:17:02.434 [http-nio-7777-exec-6] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:17:02.436 [http-nio-7777-exec-6] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是0
+2018-12-17 14:17:02.503 [http-nio-7777-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:17:02.505 [http-nio-7777-exec-9] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2018-12-17 14:17:02.557 [http-nio-7777-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:17:02.565 [http-nio-7777-exec-7] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:17:07.641 [http-nio-7777-exec-10] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:17:07.651 [http-nio-7777-exec-10] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:18:10.842 [http-nio-7777-exec-3] INFO  com.course.controller.UserManager - 查看到的结果是1
+2018-12-17 14:18:10.908 [http-nio-7777-exec-4] INFO  com.course.controller.UserManager - 查看到的结果是0
+2018-12-17 14:18:10.953 [http-nio-7777-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:18:10.961 [http-nio-7777-exec-1] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2018-12-17 14:18:16.031 [http-nio-7777-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:18:16.033 [http-nio-7777-exec-5] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是0
+2018-12-17 14:18:16.093 [http-nio-7777-exec-8] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:18:16.095 [http-nio-7777-exec-8] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2018-12-17 14:18:16.139 [http-nio-7777-exec-6] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:18:16.148 [http-nio-7777-exec-6] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:18:21.249 [http-nio-7777-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:18:21.261 [http-nio-7777-exec-9] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:19:12.158 [http-nio-7777-exec-10] INFO  com.course.controller.UserManager - 查看到的结果是1
+2018-12-17 14:19:12.213 [http-nio-7777-exec-2] INFO  com.course.controller.UserManager - 查看到的结果是1
+2018-12-17 14:19:12.256 [http-nio-7777-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:19:12.262 [http-nio-7777-exec-3] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2018-12-17 14:19:17.336 [http-nio-7777-exec-4] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:19:17.339 [http-nio-7777-exec-4] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是0
+2018-12-17 14:19:17.423 [http-nio-7777-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:19:17.425 [http-nio-7777-exec-1] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2018-12-17 14:20:08.687 [http-nio-7777-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:20:08.699 [http-nio-7777-exec-5] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:20:59.120 [http-nio-7777-exec-8] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:20:59.141 [http-nio-7777-exec-8] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:37:17.592 [http-nio-7777-exec-9] INFO  com.course.controller.UserManager - 查看到的结果是1
+2018-12-17 14:37:17.653 [http-nio-7777-exec-7] INFO  com.course.controller.UserManager - 查看到的结果是0
+2018-12-17 14:37:17.700 [http-nio-7777-exec-10] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:37:17.712 [http-nio-7777-exec-10] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2018-12-17 14:37:22.784 [http-nio-7777-exec-2] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:37:22.787 [http-nio-7777-exec-2] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是0
+2018-12-17 14:37:22.865 [http-nio-7777-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:37:22.867 [http-nio-7777-exec-3] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2018-12-17 14:37:55.288 [http-nio-7777-exec-4] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:37:55.300 [http-nio-7777-exec-4] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:40:04.664 [http-nio-7777-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:40:04.671 [http-nio-7777-exec-5] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:50:04.655 [http-nio-7777-exec-6] INFO  com.course.controller.UserManager - 查看到的结果是1
+2018-12-17 14:50:04.719 [http-nio-7777-exec-9] INFO  com.course.controller.UserManager - 查看到的结果是0
+2018-12-17 14:50:04.759 [http-nio-7777-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:50:04.782 [http-nio-7777-exec-7] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2018-12-17 14:50:09.852 [http-nio-7777-exec-10] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:50:09.857 [http-nio-7777-exec-10] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是0
+2018-12-17 14:50:09.953 [http-nio-7777-exec-2] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:50:09.955 [http-nio-7777-exec-2] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2018-12-17 14:50:10.034 [http-nio-7777-exec-3] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:50:10.045 [http-nio-7777-exec-3] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:50:25.089 [http-nio-7777-exec-4] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:50:25.100 [http-nio-7777-exec-4] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:51:11.901 [http-nio-7777-exec-5] INFO  com.course.controller.UserManager - 查看到的结果是1
+2018-12-17 14:51:11.955 [http-nio-7777-exec-8] INFO  com.course.controller.UserManager - 查看到的结果是0
+2018-12-17 14:51:11.997 [http-nio-7777-exec-6] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:51:12.003 [http-nio-7777-exec-6] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2018-12-17 14:51:17.073 [http-nio-7777-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:51:17.075 [http-nio-7777-exec-9] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是0
+2018-12-17 14:51:17.172 [http-nio-7777-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:51:17.174 [http-nio-7777-exec-7] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2018-12-17 14:51:17.231 [http-nio-7777-exec-10] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:51:17.239 [http-nio-7777-exec-10] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:52:09.579 [http-nio-7777-exec-2] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:52:09.591 [http-nio-7777-exec-2] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:52:50.697 [http-nio-7777-exec-4] INFO  com.course.controller.UserManager - 查看到的结果是1
+2018-12-17 14:52:50.753 [http-nio-7777-exec-1] INFO  com.course.controller.UserManager - 查看到的结果是0
+2018-12-17 14:52:50.786 [http-nio-7777-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:52:50.794 [http-nio-7777-exec-5] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2018-12-17 14:52:55.877 [http-nio-7777-exec-8] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:52:55.880 [http-nio-7777-exec-8] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是0
+2018-12-17 14:52:55.936 [http-nio-7777-exec-6] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:52:55.939 [http-nio-7777-exec-6] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2018-12-17 14:52:55.979 [http-nio-7777-exec-9] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:52:55.986 [http-nio-7777-exec-9] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:53:11.064 [http-nio-7777-exec-7] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:53:11.069 [http-nio-7777-exec-7] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:54:00.398 [http-nio-7777-exec-2] INFO  com.course.controller.UserManager - 查看到的结果是1
+2018-12-17 14:54:00.453 [http-nio-7777-exec-3] INFO  com.course.controller.UserManager - 查看到的结果是0
+2018-12-17 14:54:00.488 [http-nio-7777-exec-4] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:54:00.495 [http-nio-7777-exec-4] INFO  com.course.controller.UserManager - 添加用户的数量是:1
+2018-12-17 14:54:05.564 [http-nio-7777-exec-1] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:54:05.565 [http-nio-7777-exec-1] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是0
+2018-12-17 14:54:05.641 [http-nio-7777-exec-5] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:54:05.643 [http-nio-7777-exec-5] INFO  com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+2018-12-17 14:54:05.711 [http-nio-7777-exec-8] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:54:05.720 [http-nio-7777-exec-8] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
+2018-12-17 14:54:20.799 [http-nio-7777-exec-6] INFO  com.course.controller.UserManager - cookies验证通过
+2018-12-17 14:54:20.824 [http-nio-7777-exec-6] INFO  com.course.controller.UserManager - 更新数据的条目数为:1
